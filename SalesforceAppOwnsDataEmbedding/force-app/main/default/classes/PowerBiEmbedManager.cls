@@ -150,7 +150,7 @@ public with sharing class PowerBiEmbedManager {
             System.debug('ERROR --- Getting Embed Token --- ERROR');
             System.debug('Status Code: ' + responseEmbedToken.getStatusCode());            
             PowerBiReportData getEmbedTokenError = new PowerBiReportData();
-            getEmbedTokenError.error = 'Get Embed Token Error: ' + response.getStatus();
+            getEmbedTokenError.error = 'Get Embed Token Error: ' + responseEmbedToken.getStatus();
             return getEmbedTokenError;            
         }            
 
